@@ -10,26 +10,21 @@ https://jdvelasq.github.io/courses/notebooks/sklearn_supervised_10_neural_networ
 
 import pandas as pd
 
-
 def pregunta_01():
     """
     Carga y separación de los datos en `X` `y`
     """
     # Lea el archivo `concrete.csv` y asignelo al DataFrame `df`
-    #df = ____  
-    df = pd.read_csv('concrete.csv')
+    df = pd.read_csv("concrete.csv")
 
     # Asigne la columna `strength` a la variable `y`.
-    #____ = ____
-    y = df['strength']  
+    y = df["strength"]  
 
     # Asigne una copia del dataframe `df` a la variable `X`.
-    #____ = ____.____(____) 
-    x = df.copy() 
+    x = df.copy()
 
     # Remueva la columna `strength` del DataFrame `X`.
-    #____.____(____)
-    x = x.drop(columns=['strength'])  
+    x = x.drop(columns=["strength"])
 
     # Retorne `X` y `y`
     return x, y
