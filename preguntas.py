@@ -29,7 +29,7 @@ def pregunta_01():
 
     # Remueva la columna `strength` del DataFrame `X`.
     #____.____(____)
-    x.drop('strength', axis=1, inplace=True)  
+    x.drop(columns=['strength'])  
 
     # Retorne `X` y `y`
     return x, y
